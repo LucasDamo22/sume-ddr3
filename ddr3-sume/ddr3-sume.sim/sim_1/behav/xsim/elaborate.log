@@ -5,10 +5,10 @@ Running: /soft64/xilinx/ferramentas/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 512 for port 'app_wdf_data' [/sim/freq-test/ddr3 to sram/ddr3_tb.sv:140]
-WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 512 for port 'app_rd_data' [/sim/freq-test/ddr3 to sram/ddr3_tb.sv:143]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'app_wdf_mask' [/sim/freq-test/ddr3 to sram/ddr3_tb.sv:156]
-WARNING: [VRFC 10-5021] port 'complex_oclk_prech_req' is not connected on this instance [/sim/freq-test/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1317]
+WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 512 for port 'app_wdf_data' [/sim/freq-test/ddr3-pack/ddr3_tb/ddr3_tb.sv:147]
+WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 512 for port 'app_rd_data' [/sim/freq-test/ddr3-pack/ddr3_tb/ddr3_tb.sv:150]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'app_wdf_mask' [/sim/freq-test/ddr3-pack/ddr3_tb/ddr3_tb.sv:163]
+WARNING: [VRFC 10-5021] port 'complex_oclk_prech_req' is not connected on this instance [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1317]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -97,10 +97,10 @@ Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
 Compiling module unisims_ver.PHY_CONTROL(AO_TOGGLE=1,BURST_MO...
 Compiling module unisims_ver.PHASER_REF
 Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_4lanes(...
-WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_A' [/sim/freq-test/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:709]
-WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_B' [/sim/freq-test/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:708]
-WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_C' [/sim/freq-test/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:707]
-WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_D' [/sim/freq-test/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:706]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_A' [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:709]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_B' [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:708]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_C' [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:707]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_D' [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:706]
 Compiling module unisims_ver.PHASER_OUT_PHY(FINE_DELAY=60,MEM...
 Compiling module unisims_ver.OUT_FIFO(ARRAY_MODE="ARRAY_MODE_...
 Compiling module unisims_ver.OSERDESE2(DATA_RATE_OQ="SDR",DAT...

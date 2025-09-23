@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../ddr3 to sram" \
+verilog xil_defaultlib  --include "../../../../../ddr3_tb" \
 "../../../../ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" \
 "../../../../ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v" \
 "../../../../ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v" \
@@ -68,9 +68,9 @@ verilog xil_defaultlib  --include "../../../../../ddr3 to sram" \
 "../../../../ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig_sim.v" \
 "../../../../ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0.v" \
 
-sv xil_defaultlib  --include "../../../../../ddr3 to sram" \
-"../../../../../ddr3 to sram/ddr3_model.sv" \
-"../../../../../ddr3 to sram/ddr3_tb.sv" \
+sv xil_defaultlib  --include "../../../../../ddr3_tb" \
+"../../../../../ddr3_tb/ddr3_model.sv" \
+"../../../../../ddr3_tb/ddr3_tb.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
