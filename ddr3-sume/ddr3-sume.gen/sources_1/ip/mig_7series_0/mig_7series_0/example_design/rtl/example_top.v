@@ -246,8 +246,9 @@ module example_top #
    input                                        sys_clk_p,
    input                                        sys_clk_n,
    
-   // Single-ended iodelayctrl clk (reference clock)
-   input                                        clk_ref_i,
+   // differential iodelayctrl clk (reference clock)
+   input                                        clk_ref_p,
+   input                                        clk_ref_n,
 
    output                                       tg_compare_error,
    output                                       init_calib_complete,
@@ -439,7 +440,8 @@ function integer clogb2 (input integer size);
        .sys_clk_p                       (sys_clk_p),
        .sys_clk_n                       (sys_clk_n),
 // Reference Clock Ports
-       .clk_ref_i                      (clk_ref_i),
+       .clk_ref_p                      (clk_ref_p),
+       .clk_ref_n                      (clk_ref_n),
        .device_temp            (device_temp),
        `ifdef SKIP_CALIB
        .calib_tap_req                    (calib_tap_req),

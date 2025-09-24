@@ -114,7 +114,8 @@
     .sys_clk_p                       (sys_clk_p),  // input				sys_clk_p
     .sys_clk_n                       (sys_clk_n),  // input				sys_clk_n
     // Reference Clock Ports
-    .clk_ref_i                      (clk_ref_i),
+    .clk_ref_p                      (clk_ref_p),  // input				clk_ref_p
+    .clk_ref_n                      (clk_ref_n),  // input				clk_ref_n
     .sys_rst                        (sys_rst) // input sys_rst
     );
 

@@ -7,7 +7,8 @@
 (* BLOCK_STUB = "true" *)
 module mig_7series_0 (
   sys_rst,
-  clk_ref_i,
+  clk_ref_p,
+  clk_ref_n,
   ddr3_dq,
   ddr3_dqs_p,
   ddr3_dqs_n,
@@ -53,10 +54,12 @@ module mig_7series_0 (
   (* X_INTERFACE_MODE = "slave SYSTEM_RESET" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SYSTEM_RESET, POLARITY ACTIVE_LOW, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, INSERT_VIP 0" *)
   input sys_rst;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK_REF_I CLK" *)
-  (* X_INTERFACE_MODE = "slave CLK_REF_I" *)
-  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK_REF_I, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN , ASSOCIATED_BUSIF , ASSOCIATED_PORT , ASSOCIATED_RESET , INSERT_VIP 0" *)
-  input clk_ref_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 CLK_REF CLK_P" *)
+  (* X_INTERFACE_MODE = "slave CLK_REF" *)
+  (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK_REF, CAN_DEBUG false, FREQ_HZ 100000000" *)
+  input clk_ref_p;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 CLK_REF CLK_N" *)
+  input clk_ref_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR3 DQ" *)
   (* X_INTERFACE_MODE = "master DDR3" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR3, CAN_DEBUG false, TIMEPERIOD_PS 1250, MEMORY_TYPE COMPONENTS, MEMORY_PART , DATA_WIDTH 8, CS_ENABLED true, DATA_MASK_ENABLED true, SLOT Single, CUSTOM_PARTS , MEM_ADDR_MAP ROW_COLUMN_BANK, BURST_LENGTH 8, AXI_ARBITRATION_SCHEME TDM, CAS_LATENCY 11, CAS_WRITE_LATENCY 11" *)

@@ -3,3 +3,73 @@
     <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3747367" HostCore="32" HostMemory="65530152">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3756972" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3767486" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3773360" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3776843" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3845342" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3847873" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3852383" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3871953" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3874124" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3930660" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="3933719" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="359726" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="420044" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="lucas.damo" Host="gaphs22.portoalegre.pucrsnet.br" Pid="423898" HostCore="32" HostMemory="65530152">
+    </Process>
+</ProcessHandle>

@@ -5,14 +5,14 @@ Running: /soft64/xilinx/ferramentas/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 512 for port 'app_wdf_data' [/sim/freq-test/ddr3-pack/ddr3_tb/ddr3_tb.sv:147]
-WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 512 for port 'app_rd_data' [/sim/freq-test/ddr3-pack/ddr3_tb/ddr3_tb.sv:150]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'app_wdf_mask' [/sim/freq-test/ddr3-pack/ddr3_tb/ddr3_tb.sv:163]
 WARNING: [VRFC 10-5021] port 'complex_oclk_prech_req' is not connected on this instance [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1317]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1fs
+Compiling module xil_defaultlib.rom
+Compiling module unisims_ver.IBUFDS(IBUF_LOW_PWR="FALSE")
+Compiling module unisims_ver.IBUFGDS(IBUF_LOW_PWR="FALSE")
 Compiling module unisims_ver.MMCME2_ADV(BANDWIDTH="HIGH",CLKF...
 Compiling module unisims_ver.BUFG
 Compiling module unisims_ver.IDELAYCTRL_default
@@ -145,6 +145,7 @@ Compiling module xil_defaultlib.mig_7series_v4_2_ui_top(APP_DATA...
 Compiling module xil_defaultlib.mig_7series_v4_2_memc_ui_top_std...
 Compiling module xil_defaultlib.mig_7series_0_mig_default
 Compiling module xil_defaultlib.mig_7series_0
+Compiling module xil_defaultlib.top
 Compiling module xil_defaultlib.ddr3_model_default
 Compiling module xil_defaultlib.ddr3_tb
 Compiling module xil_defaultlib.glbl

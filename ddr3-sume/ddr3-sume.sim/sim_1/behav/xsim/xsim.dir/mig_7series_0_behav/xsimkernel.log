@@ -1,7 +1,0 @@
-Running: xsim.dir/mig_7series_0_behav/xsimk -simmode gui -wdb mig_7series_0_behav.wdb -simrunnum 0 -socket 42033
-Design successfully loaded
-Design Loading Memory Usage: 567512 KB (Peak: 567512 KB)
-Design Loading CPU Usage: 760 ms
-Simulation completed
-Simulation Memory Usage: 651100 KB (Peak: 706780 KB)
-Simulation CPU Usage: 840 ms

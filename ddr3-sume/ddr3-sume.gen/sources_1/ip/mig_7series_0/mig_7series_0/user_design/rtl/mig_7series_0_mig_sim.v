@@ -424,7 +424,7 @@ module mig_7series_0_mig #
    parameter SYSCLK_TYPE           = "DIFFERENTIAL",
                                      // System clock type DIFFERENTIAL, SINGLE_ENDED,
                                      // NO_BUFFER
-   parameter REFCLK_TYPE           = "NO_BUFFER",
+   parameter REFCLK_TYPE           = "DIFFERENTIAL",
                                      // Reference clock type DIFFERENTIAL, SINGLE_ENDED,
                                      // NO_BUFFER, USE_SYSTEM_CLOCK
    parameter SYS_RST_PORT          = "FALSE",
@@ -448,7 +448,7 @@ module mig_7series_0_mig #
    //***************************************************************************
    parameter REFCLK_FREQ           = 200.0,
                                      // IODELAYCTRL reference clock frequency
-   parameter DIFF_TERM_REFCLK      = "TRUE",
+   parameter DIFF_TERM_REFCLK      = "FALSE",
                                      // Differential Termination for idelay
                                      // reference clock input pins
    //***************************************************************************
@@ -521,8 +521,9 @@ module mig_7series_0_mig #
    input                                        sys_clk_p,
    input                                        sys_clk_n,
    
-   // Single-ended iodelayctrl clk (reference clock)
-   input                                        clk_ref_i,
+   // differential iodelayctrl clk (reference clock)
+   input                                        clk_ref_p,
+   input                                        clk_ref_n,
    
    // user interface signals
    input [ADDR_WIDTH-1:0]                       app_addr,
@@ -641,8 +642,7 @@ module mig_7series_0_mig #
 
   wire                              sys_clk_i;
   wire                              mmcm_clk;
-  wire                              clk_ref_p;
-  wire                              clk_ref_n;
+  wire                              clk_ref_i;
   wire [11:0]                       device_temp_s;
   wire [11:0]                       device_temp_i;
 
@@ -732,8 +732,7 @@ module mig_7series_0_mig #
   assign ui_clk_sync_rst = rst;
   
   assign sys_clk_i = 1'b0;
-  assign clk_ref_p = 1'b0;
-  assign clk_ref_n = 1'b0;
+  assign clk_ref_i = 1'b0;
   assign device_temp = device_temp_s;
       
 

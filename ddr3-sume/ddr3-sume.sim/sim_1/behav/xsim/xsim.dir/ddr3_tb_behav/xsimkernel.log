@@ -1,4 +1,4 @@
-Running: xsim.dir/ddr3_tb_behav/xsimk -simmode gui -wdb ddr3_tb_behav.wdb -simrunnum 0 -socket 55155
+Running: xsim.dir/ddr3_tb_behav/xsimk -simmode gui -wdb ddr3_tb_behav.wdb -simrunnum 0 -socket 58169
 Design successfully loaded
-Design Loading Memory Usage: 576176 KB (Peak: 576176 KB)
+Design Loading Memory Usage: 576252 KB (Peak: 576252 KB)
 Design Loading CPU Usage: 790 ms

@@ -56,6 +56,13 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param chipscope.maxJobs 8
+set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-3841674-gaphs22.portoalegre.pucrsnet.br/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7vx690tffg1761-3
 
@@ -65,22 +72,19 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.cache/wt [current_project]
 set_property parent.project_path /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib -sv /sim/freq-test/ddr3-pack/ddr3_tb/ddr3_top.sv
+read_verilog -library xil_defaultlib -sv {
+  /sim/freq-test/ddr3-pack/ddr3_tb/rom.sv
+  /sim/freq-test/ddr3-pack/ddr3_tb/ddr3_top.sv
+}
 read_ip -quiet /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
 set_property used_in_implementation false [get_files -all /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
 set_property used_in_implementation false [get_files -all /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
-
-read_ip -quiet /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -97,6 +101,8 @@ set_property used_in_implementation false [get_files /sim/freq-test/ddr3-pack/dd
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

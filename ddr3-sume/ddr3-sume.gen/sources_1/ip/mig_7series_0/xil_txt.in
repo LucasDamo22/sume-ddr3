@@ -9,13 +9,13 @@ SET_PREFERENCE package ffg1761
 SET_PREFERENCE verilogsim true
 SET_PREFERENCE vhdlsim false
 SET_PREFERENCE designentry Verilog
-SET_PREFERENCE outputdirectory /sim/freq-test/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/_tmp/
-SET_PREFERENCE subworkingdirectory /sim/freq-test/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/_tmp/
+SET_PREFERENCE outputdirectory /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/_tmp/
+SET_PREFERENCE subworkingdirectory /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/_tmp/
 SET_PREFERENCE flowvendor Other
 SET_PREFERENCE tool vivado
 SET_PREFERENCE compnamestatus 0
 SET_PARAMETER component_name mig_7series_0
-SET_PARAMETER xml_input_file /sim/freq-test/ddr3-sume/ddr3-sume.srcs/sources_1/ip/mig_7series_0/mig_b.prj
+SET_PARAMETER xml_input_file /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.srcs/sources_1/ip/mig_7series_0/mig_a.prj
 SET_PARAMETER data_dir_path /soft64/xilinx/ferramentas/Vivado/2024.2/data/ip/xilinx/mig_7series_v4_2
 SET_CORE_NAME Memory Interface Generator (MIG 7 Series)
 SET_CORE_VERSION 4.2

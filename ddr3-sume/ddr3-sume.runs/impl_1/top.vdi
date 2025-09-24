@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue Sep 23 12:23:56 2025
-# Process ID         : 3747466
+# Start of session at: Wed Sep 24 12:48:52 2025
+# Process ID         : 423997
 # Current directory  : /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.runs/impl_1
 # Command line       : vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file           : /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.runs/impl_1/top.vdi
@@ -19,454 +19,36 @@
 # Host memory        : 67102 MB
 # Swap memory        : 33755 MB
 # Total Virtual      : 100858 MB
-# Available Virtual  : 69325 MB
+# Available Virtual  : 62932 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
 Command: link_design -top top -part xc7vx690tffg1761-3
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7vx690tffg1761-3
-INFO: [Project 1-454] Reading design checkpoint '/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'magodoclock'
-Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2260.711 ; gain = 0.000 ; free physical = 8020 ; free virtual = 65167
-INFO: [Netlist 29-17] Analyzing 1047 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2245.461 ; gain = 0.000 ; free physical = 7975 ; free virtual = 59062
+INFO: [Netlist 29-17] Analyzing 1192 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2024.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_clk_ibuf/diff_input_clk.u_ibufg_sys_clk' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DIFF_TERM' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_clk_ibuf/diff_input_clk.u_ibufg_sys_clk' is not directly connected to top level port. 'DIFF_TERM' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[0].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[0].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[0].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[10].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[10].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[10].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[11].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[11].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[11].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[12].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[12].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[12].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[13].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[13].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[13].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[14].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[14].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[14].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[15].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[15].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[15].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[16].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[16].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[16].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[17].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[17].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[17].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[18].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[18].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[18].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[19].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[19].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[19].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[1].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[1].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[1].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[20].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[20].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[20].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[21].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[21].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[21].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[22].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[22].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[22].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[23].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[23].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[23].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[24].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[24].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[24].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[25].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[25].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[25].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[26].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[26].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[26].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[27].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[27].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[27].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[28].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[28].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[28].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[29].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[29].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[29].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[2].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[2].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[2].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[30].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[30].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[30].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[31].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[31].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[31].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[32].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[32].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[32].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[33].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[33].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[33].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[34].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[34].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[34].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[35].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[35].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[35].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[36].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[36].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[36].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[37].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[37].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[37].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[38].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[38].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[38].u_iobuf_dq' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[39].u_iobuf_dq' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dq_iobuf_default.gen_dq_iobuf[39].u_iobuf_dq' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
-Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
-INFO: [Common 17-14] Message 'Constraints 18-549' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Constraints 18-586] IO constraint DQS_BIAS with a setting of TRUE for cell u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[0].gen_dqs_diff.u_iobuf_dqs will not be propagated through the buffer. The constraint should be associated with the top level port.
-CRITICAL WARNING: [Constraints 18-586] IO constraint DQS_BIAS with a setting of TRUE for cell u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[1].gen_dqs_diff.u_iobuf_dqs will not be propagated through the buffer. The constraint should be associated with the top level port.
-CRITICAL WARNING: [Constraints 18-586] IO constraint DQS_BIAS with a setting of TRUE for cell u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[2].gen_dqs_diff.u_iobuf_dqs will not be propagated through the buffer. The constraint should be associated with the top level port.
-CRITICAL WARNING: [Constraints 18-586] IO constraint DQS_BIAS with a setting of TRUE for cell u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[3].gen_dqs_diff.u_iobuf_dqs will not be propagated through the buffer. The constraint should be associated with the top level port.
-CRITICAL WARNING: [Constraints 18-586] IO constraint DQS_BIAS with a setting of TRUE for cell u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[4].gen_dqs_diff.u_iobuf_dqs will not be propagated through the buffer. The constraint should be associated with the top level port.
-CRITICAL WARNING: [Constraints 18-586] IO constraint DQS_BIAS with a setting of TRUE for cell u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[5].gen_dqs_diff.u_iobuf_dqs will not be propagated through the buffer. The constraint should be associated with the top level port.
-CRITICAL WARNING: [Constraints 18-586] IO constraint DQS_BIAS with a setting of TRUE for cell u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[6].gen_dqs_diff.u_iobuf_dqs will not be propagated through the buffer. The constraint should be associated with the top level port.
-CRITICAL WARNING: [Constraints 18-586] IO constraint DQS_BIAS with a setting of TRUE for cell u_mig_7series_0/u_mig_7series_0_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HP.gen_dqs_iobuf[7].gen_dqs_diff.u_iobuf_dqs will not be propagated through the buffer. The constraint should be associated with the top level port.
 Parsing XDC File [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IO_BUFFER_TYPE', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:27]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IO_BUFFER_TYPE', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:28]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-WARNING: [Vivado 12-507] No nets matched 'sys_clk_p'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:41]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:49]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:50]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:51]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:52]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:55]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:56]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:57]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:58]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:61]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:62]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:63]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:64]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:67]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:68]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:69]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:70]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:73]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:74]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:75]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:76]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:79]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:80]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:81]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:82]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:85]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:86]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:87]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:88]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:91]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:92]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:93]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:94]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:97]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:98]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:99]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:100]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:103]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:104]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:105]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:106]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:109]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:110]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:111]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:112]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:115]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:116]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:117]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:118]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:121]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:122]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:123]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:124]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:127]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:128]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:129]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:130]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:133]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:134]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:135]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:136]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:139]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:140]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:141]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:142]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:145]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:146]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:147]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:148]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:151]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:152]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:153]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:154]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:157]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:158]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:159]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:160]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:163]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:164]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:165]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:166]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:169]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:170]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:171]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:172]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:175]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:176]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:177]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:178]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:181]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:182]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:183]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:184]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:187]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:188]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:189]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:190]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'VCCAUX_IO', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:193]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'SLEW', because the property does not exist for objects of type 'pin'. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:194]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-INFO: [Common 17-14] Message 'Netlist 29-160' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:194]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: u_mig_7series_0/sys_clk_p). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:41]
 Finished Parsing XDC File [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
-Parsing XDC File [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'magodoclock/inst'
-Finished Parsing XDC File [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'magodoclock/inst'
-Parsing XDC File [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'magodoclock/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:54]
-INFO: [Timing 38-2] Deriving generated clocks [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:54]
-Finished Parsing XDC File [/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'magodoclock/inst'
 Parsing XDC File [/sim/freq-test/ddr3-pack/ddr3_tb/SUME_Master.xdc]
 Finished Parsing XDC File [/sim/freq-test/ddr3-pack/ddr3_tb/SUME_Master.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3257.363 ; gain = 0.000 ; free physical = 7210 ; free virtual = 64357
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2717.168 ; gain = 0.000 ; free physical = 7633 ; free virtual = 58720
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 395 instances were transformed.
+  A total of 482 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 64 instances
-  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT(x2), OBUFTDS_DCIEN): 8 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 305 instances
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT(x2), INV, OBUFTDS_DCIEN(x2)): 8 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 391 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 18 instances
 
-12 Infos, 101 Warnings, 109 Critical Warnings and 0 Errors encountered.
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3257.363 ; gain = 1494.023 ; free physical = 7210 ; free virtual = 64357
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2717.168 ; gain = 953.672 ; free physical = 7633 ; free virtual = 58720
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
@@ -477,121 +59,121 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.9 . Memory (MB): peak = 3293.148 ; gain = 27.781 ; free physical = 7160 ; free virtual = 64308
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.69 . Memory (MB): peak = 2854.203 ; gain = 129.031 ; free physical = 7560 ; free virtual = 58646
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-2] Deriving generated clocks
-Ending Cache Timing Information Task | Checksum: 1e181496f
+Ending Cache Timing Information Task | Checksum: 170e3e245
 
-Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3317.961 ; gain = 24.812 ; free physical = 7151 ; free virtual = 64298
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3298.180 ; gain = 443.977 ; free physical = 7301 ; free virtual = 58380
 
 Starting Logic Optimization Task
 
 Phase 1 Initialization
 
 Phase 1.1 Core Generation And Design Setup
-Phase 1.1 Core Generation And Design Setup | Checksum: 1e181496f
+Phase 1.1 Core Generation And Design Setup | Checksum: 170e3e245
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6816 ; free virtual = 63970
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6962 ; free virtual = 58040
 
 Phase 1.2 Setup Constraints And Sort Netlist
-Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1e181496f
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 170e3e245
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6816 ; free virtual = 63970
-Phase 1 Initialization | Checksum: 1e181496f
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6962 ; free virtual = 58040
+Phase 1 Initialization | Checksum: 170e3e245
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6816 ; free virtual = 63970
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6962 ; free virtual = 58040
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Timer Update
-Phase 2.1 Timer Update | Checksum: 1e181496f
+Phase 2.1 Timer Update | Checksum: 170e3e245
 
-Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6816 ; free virtual = 63970
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6961 ; free virtual = 58040
 
 Phase 2.2 Timing Data Collection
-Phase 2.2 Timing Data Collection | Checksum: 1e181496f
+Phase 2.2 Timing Data Collection | Checksum: 170e3e245
 
-Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6810 ; free virtual = 63964
-Phase 2 Timer Update And Timing Data Collection | Checksum: 1e181496f
+Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6958 ; free virtual = 58036
+Phase 2 Timer Update And Timing Data Collection | Checksum: 170e3e245
 
-Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6810 ; free virtual = 63964
+Time (s): cpu = 00:00:00.6 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6958 ; free virtual = 58036
 
 Phase 3 Retarget
 INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
 INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
-INFO: [Opt 31-1566] Pulled 16 inverters resulting in an inversion of 239 pins
+INFO: [Opt 31-1566] Pulled 24 inverters resulting in an inversion of 399 pins
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 3 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 3 Retarget | Checksum: 24a8ecd85
+Phase 3 Retarget | Checksum: 1a0492a9d
 
-Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.25 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6809 ; free virtual = 63963
-Retarget | Checksum: 24a8ecd85
-INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 92 cells
+Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6958 ; free virtual = 58036
+Retarget | Checksum: 1a0492a9d
+INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 100 cells
 INFO: [Opt 31-1021] In phase Retarget, 11 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 4 Constant propagation | Checksum: 1b3473a1d
+Phase 4 Constant propagation | Checksum: 257758a1a
 
-Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6809 ; free virtual = 63963
-Constant propagation | Checksum: 1b3473a1d
-INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 52 cells
+Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:00.4 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6958 ; free virtual = 58036
+Constant propagation | Checksum: 257758a1a
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 36 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 5 Sweep
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6809 ; free virtual = 63963
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6958 ; free virtual = 58036
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6809 ; free virtual = 63963
-Phase 5 Sweep | Checksum: 26e0d2c7a
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6958 ; free virtual = 58036
+Phase 5 Sweep | Checksum: 223b65c3c
 
-Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.39 . Memory (MB): peak = 3633.945 ; gain = 0.000 ; free physical = 6809 ; free virtual = 63963
-Sweep | Checksum: 26e0d2c7a
-INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 87 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.51 . Memory (MB): peak = 3644.891 ; gain = 0.000 ; free physical = 6958 ; free virtual = 58036
+Sweep | Checksum: 223b65c3c
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 44 cells
 
 Phase 6 BUFG optimization
-Phase 6 BUFG optimization | Checksum: 26e0d2c7a
+Phase 6 BUFG optimization | Checksum: 223b65c3c
 
-Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:00.46 . Memory (MB): peak = 3665.961 ; gain = 32.016 ; free physical = 6809 ; free virtual = 63963
-BUFG optimization | Checksum: 26e0d2c7a
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3676.906 ; gain = 32.016 ; free physical = 6957 ; free virtual = 58035
+BUFG optimization | Checksum: 223b65c3c
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 7 Shift Register Optimization | Checksum: 26e0d2c7a
+Phase 7 Shift Register Optimization | Checksum: 223b65c3c
 
-Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.46 . Memory (MB): peak = 3665.961 ; gain = 32.016 ; free physical = 6809 ; free virtual = 63963
-Shift Register Optimization | Checksum: 26e0d2c7a
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.59 . Memory (MB): peak = 3676.906 ; gain = 32.016 ; free physical = 6957 ; free virtual = 58035
+Shift Register Optimization | Checksum: 223b65c3c
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
-Phase 8 Post Processing Netlist | Checksum: 1cf7c3855
+Phase 8 Post Processing Netlist | Checksum: 223b65c3c
 
-Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.49 . Memory (MB): peak = 3665.961 ; gain = 32.016 ; free physical = 6809 ; free virtual = 63963
-Post Processing Netlist | Checksum: 1cf7c3855
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.62 . Memory (MB): peak = 3676.906 ; gain = 32.016 ; free physical = 6957 ; free virtual = 58035
+Post Processing Netlist | Checksum: 223b65c3c
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 9 Finalization
 
 Phase 9.1 Finalizing Design Cores and Updating Shapes
-Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1d128587a
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 174d44e6a
 
-Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3665.961 ; gain = 32.016 ; free physical = 6810 ; free virtual = 63964
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.74 . Memory (MB): peak = 3676.906 ; gain = 32.016 ; free physical = 6957 ; free virtual = 58035
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3665.961 ; gain = 0.000 ; free physical = 6809 ; free virtual = 63963
-Phase 9.2 Verifying Netlist Connectivity | Checksum: 1d128587a
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3676.906 ; gain = 0.000 ; free physical = 6957 ; free virtual = 58035
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 174d44e6a
 
-Time (s): cpu = 00:00:00.96 ; elapsed = 00:00:00.59 . Memory (MB): peak = 3665.961 ; gain = 32.016 ; free physical = 6818 ; free virtual = 63972
-Phase 9 Finalization | Checksum: 1d128587a
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.76 . Memory (MB): peak = 3676.906 ; gain = 32.016 ; free physical = 6957 ; free virtual = 58035
+Phase 9 Finalization | Checksum: 174d44e6a
 
-Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:00.59 . Memory (MB): peak = 3665.961 ; gain = 32.016 ; free physical = 6818 ; free virtual = 63972
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.76 . Memory (MB): peak = 3676.906 ; gain = 32.016 ; free physical = 6957 ; free virtual = 58035
 Opt_design Change Summary
 =========================
 
@@ -599,18 +181,18 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               1  |              92  |                                             11  |
-|  Constant propagation         |               0  |              52  |                                              1  |
-|  Sweep                        |               1  |              87  |                                              0  |
+|  Retarget                     |               1  |             100  |                                             11  |
+|  Constant propagation         |               0  |              36  |                                              1  |
+|  Sweep                        |               1  |              44  |                                              0  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               0  |                                              1  |
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Ending Logic Optimization Task | Checksum: 1d128587a
+Ending Logic Optimization Task | Checksum: 174d44e6a
 
-Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:00.6 . Memory (MB): peak = 3665.961 ; gain = 32.016 ; free physical = 6818 ; free virtual = 63972
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.76 . Memory (MB): peak = 3676.906 ; gain = 32.016 ; free physical = 6957 ; free virtual = 58035
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -623,29 +205,30 @@ Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
-Ending PowerOpt Patch Enables Task | Checksum: 1d128587a
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 7 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 1 Total Ports: 14
+Ending PowerOpt Patch Enables Task | Checksum: 170216f43
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6705 ; free virtual = 63862
-Ending Power Optimization Task | Checksum: 1d128587a
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6713 ; free virtual = 57791
+Ending Power Optimization Task | Checksum: 170216f43
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3935.867 ; gain = 269.906 ; free physical = 6705 ; free virtual = 63862
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 4022.750 ; gain = 345.844 ; free physical = 6713 ; free virtual = 57791
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 1d128587a
+Ending Final Cleanup Task | Checksum: 170216f43
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6705 ; free virtual = 63862
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6713 ; free virtual = 57791
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6705 ; free virtual = 63862
-Ending Netlist Obfuscation Task | Checksum: 1d128587a
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6713 ; free virtual = 57791
+Ending Netlist Obfuscation Task | Checksum: 218dbed40
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6705 ; free virtual = 63862
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6713 ; free virtual = 57791
 INFO: [Common 17-83] Releasing license: Implementation
-43 Infos, 101 Warnings, 109 Critical Warnings and 0 Errors encountered.
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 4022.750 ; gain = 1305.582 ; free physical = 6713 ; free virtual = 57791
 INFO: [Vivado 12-24828] Executing command : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -654,16 +237,16 @@ INFO: [Vivado_Tcl 2-168] The results of DRC are in file /sim/freq-test/ddr3-pack
 report_drc completed successfully
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6740 ; free virtual = 63888
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6740 ; free virtual = 63888
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6691 ; free virtual = 57772
+Wrote PlaceDB: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6691 ; free virtual = 57772
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6690 ; free virtual = 57771
 Writing XDEF routing.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6735 ; free virtual = 63884
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6729 ; free virtual = 63882
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6729 ; free virtual = 63882
-Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6727 ; free virtual = 63882
-Write Physdb Complete: Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6726 ; free virtual = 63881
+Wrote RouteStorage: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6683 ; free virtual = 57770
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6683 ; free virtual = 57770
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6681 ; free virtual = 57770
+Write Physdb Complete: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6681 ; free virtual = 57770
 INFO: [Common 17-1381] The checkpoint '/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.runs/impl_1/top_opt.dcp' has been generated.
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
@@ -683,26 +266,512 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6827 ; free virtual = 63971
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1555b257d
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6683 ; free virtual = 57768
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 13ad770ab
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6827 ; free virtual = 63971
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6827 ; free virtual = 63971
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6683 ; free virtual = 57768
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6683 ; free virtual = 57768
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-ERROR: [Place 30-378] Input pin of input buffer u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_clk_ibuf/diff_input_clk.u_ibufg_sys_clk has an illegal connection to a logic constant value.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 8e2b00e7
+INFO: [Place 30-1907] u_mig_7series_0/u_mig_7series_0_mig/u_iodelay_ctrl/idelayctrl_gen_1.u_idelayctrl_300_400_REPLICATED_0 replication was created for u_mig_7series_0/u_mig_7series_0_mig/u_iodelay_ctrl/idelayctrl_gen_1.u_idelayctrl_300_400 IDELAYCTRL
+WARNING: [Place 30-575] Sub-optimal placement for a clock-capable IO pin and MMCM pair. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.6 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6825 ; free virtual = 63969
-Phase 1 Placer Initialization | Checksum: 8e2b00e7
+	u_mig_7series_0/u_mig_7series_0_mig/u_iodelay_ctrl/diff_clk_ref.u_ibufg_clk_ref (IBUFDS.O) is locked to IOB_X1Y424
+	u_mig_7series_0/u_mig_7series_0_mig/u_iodelay_ctrl/clk_ref_mmcm_gen.mmcm_i (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X0Y4
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b9f1b2c8
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.61 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6824 ; free virtual = 63969
-ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer stopped due to earlier errors. Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'
-Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
-Ending Placer Task | Checksum: 1521142a8
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.82 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6682 ; free virtual = 57767
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.62 . Memory (MB): peak = 3935.867 ; gain = 0.000 ; free physical = 6824 ; free virtual = 63969
-59 Infos, 101 Warnings, 109 Critical Warnings and 3 Errors encountered.
-place_design failed
-ERROR: [Common 17-69] Command failed: Placer could not place all instances
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 23 12:24:27 2025...
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1b9b756c4
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6678 ; free virtual = 57763
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1b9b756c4
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6678 ; free virtual = 57763
+Phase 1 Placer Initialization | Checksum: 1b9b756c4
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6677 ; free virtual = 57761
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1610fac1f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6671 ; free virtual = 57756
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: ba1cdb74
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6671 ; free virtual = 57756
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: ba1cdb74
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6671 ; free virtual = 57756
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 155a63ffd
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:11 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6624 ; free virtual = 57699
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 117d52bce
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6625 ; free virtual = 57700
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 2379 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 1101 nets or LUTs. Breaked 0 LUT, combined 1101 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6625 ; free virtual = 57699
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |           1101  |                  1101  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |           1101  |                  1101  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1edac739f
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6625 ; free virtual = 57700
+Phase 2.5 Global Place Phase2 | Checksum: 14c1c406d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:14 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6625 ; free virtual = 57700
+Phase 2 Global Placement | Checksum: 14c1c406d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:14 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6625 ; free virtual = 57700
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 19b443f39
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:14 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6625 ; free virtual = 57700
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 268ef521f
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6625 ; free virtual = 57699
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 263d8dfa8
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6625 ; free virtual = 57699
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1a4044f50
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:16 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6625 ; free virtual = 57699
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 2549792a1
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:17 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6622 ; free virtual = 57696
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 174967672
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:20 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6609 ; free virtual = 57684
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 116e78613
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:20 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6609 ; free virtual = 57684
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 19a5a8e6f
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:20 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6609 ; free virtual = 57684
+Phase 3 Detail Placement | Checksum: 19a5a8e6f
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:20 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6609 ; free virtual = 57684
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1ec58edb2
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.345 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 2060d16ce
+
+Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.28 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6597 ; free virtual = 57672
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 276b9f18a
+
+Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.31 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6597 ; free virtual = 57672
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1ec58edb2
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6597 ; free virtual = 57672
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.371. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 24c594c7c
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6597 ; free virtual = 57672
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6597 ; free virtual = 57672
+Phase 4.1 Post Commit Optimization | Checksum: 24c594c7c
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6597 ; free virtual = 57672
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 24c594c7c
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6602 ; free virtual = 57674
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                4x4|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                4x4|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 24c594c7c
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6602 ; free virtual = 57674
+Phase 4.3 Placer Reporting | Checksum: 24c594c7c
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6602 ; free virtual = 57674
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6602 ; free virtual = 57674
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6602 ; free virtual = 57674
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 23d3107ac
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6602 ; free virtual = 57674
+Ending Placer Task | Checksum: 167787776
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6604 ; free virtual = 57675
+75 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:24 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6604 ; free virtual = 57675
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.12 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6601 ; free virtual = 57672
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_io -file top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.31 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6600 ; free virtual = 57672
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6597 ; free virtual = 57673
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6573 ; free virtual = 57674
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6573 ; free virtual = 57674
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6573 ; free virtual = 57674
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6571 ; free virtual = 57674
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6569 ; free virtual = 57674
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.5 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6569 ; free virtual = 57674
+INFO: [Common 17-1381] The checkpoint '/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.runs/impl_1/top_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6593 ; free virtual = 57673
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.371 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+86 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6589 ; free virtual = 57673
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.44 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6564 ; free virtual = 57673
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6564 ; free virtual = 57673
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6564 ; free virtual = 57673
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6561 ; free virtual = 57673
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6560 ; free virtual = 57673
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.48 . Memory (MB): peak = 4022.750 ; gain = 0.000 ; free physical = 6560 ; free virtual = 57673
+INFO: [Common 17-1381] The checkpoint '/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.runs/impl_1/top_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 65bf02d3 ConstDB: 0 ShapeSum: c29fc81e RouteDB: 3f19ac85
+Post Restoration Checksum: NetGraph: da0de399 | NumContArr: 5e40b990 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2bda09263
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 4405.543 ; gain = 382.793 ; free physical = 6185 ; free virtual = 57273
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2bda09263
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 4405.543 ; gain = 382.793 ; free physical = 6185 ; free virtual = 57273
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2bda09263
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 4405.543 ; gain = 382.793 ; free physical = 6185 ; free virtual = 57273
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2d294220a
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:28 . Memory (MB): peak = 4614.184 ; gain = 591.434 ; free physical = 5975 ; free virtual = 57063
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.290  | TNS=0.000  | WHS=-0.939 | THS=-1984.045|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00270993 %
+  Global Horizontal Routing Utilization  = 0.00170061 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 20697
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 20681
+  Number of Partially Routed Nets     = 16
+  Number of Node Overlaps             = 16
+
+Phase 2 Router Initialization | Checksum: 2fb281fc2
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:29 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 2fb281fc2
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:29 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 278f320f5
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:29 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+Phase 4 Initial Routing | Checksum: 278f320f5
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:29 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 2225
+ Number of Nodes with overlaps = 118
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.292  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2750720cb
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:33 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+Phase 5 Rip-up And Reroute | Checksum: 2750720cb
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:33 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 2750720cb
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:33 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 2750720cb
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:33 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+Phase 6 Delay and Skew Optimization | Checksum: 2750720cb
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:33 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.344  | TNS=0.000  | WHS=0.053  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 21882a7d7
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+Phase 7 Post Hold Fix | Checksum: 21882a7d7
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.996206 %
+  Global Horizontal Routing Utilization  = 0.873093 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 21882a7d7
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 21882a7d7
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5960 ; free virtual = 57048
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 2988fd2bc
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5959 ; free virtual = 57047
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 2988fd2bc
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5959 ; free virtual = 57047
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.344  | TNS=0.000  | WHS=0.053  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 2988fd2bc
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5959 ; free virtual = 57047
+Total Elapsed time in route_design: 34.12 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 274bab61b
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5959 ; free virtual = 57047
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 274bab61b
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5959 ; free virtual = 57047
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+97 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:06 ; elapsed = 00:00:34 . Memory (MB): peak = 4636.902 ; gain = 614.152 ; free physical = 5959 ; free virtual = 57047
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.runs/impl_1/top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.runs/impl_1/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file top_route_status.rpt -pb top_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+117 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file top_clock_utilization_routed.rpt
+generate_parallel_reports: Time (s): cpu = 00:00:28 ; elapsed = 00:00:10 . Memory (MB): peak = 4692.930 ; gain = 56.027 ; free physical = 5927 ; free virtual = 57043
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4692.930 ; gain = 0.000 ; free physical = 5921 ; free virtual = 57043
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.44 . Memory (MB): peak = 4692.930 ; gain = 0.000 ; free physical = 5898 ; free virtual = 57044
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4692.930 ; gain = 0.000 ; free physical = 5898 ; free virtual = 57044
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4692.930 ; gain = 0.000 ; free physical = 5895 ; free virtual = 57044
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4692.930 ; gain = 0.000 ; free physical = 5893 ; free virtual = 57044
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4692.930 ; gain = 0.000 ; free physical = 5891 ; free virtual = 57044
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.56 . Memory (MB): peak = 4692.930 ; gain = 0.000 ; free physical = 5891 ; free virtual = 57044
+INFO: [Common 17-1381] The checkpoint '/sim/freq-test/ddr3-pack/ddr3-sume/ddr3-sume.runs/impl_1/top_routed.dcp' has been generated.
+Command: write_bitstream -force top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+128 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 5140.504 ; gain = 447.574 ; free physical = 5402 ; free virtual = 56554
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 24 12:50:52 2025...
