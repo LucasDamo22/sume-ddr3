@@ -10,9 +10,9 @@ set_property CFGBVS GND [current_design]
 set_property CONFIG_VOLTAGE 1.8 [current_design]
 
 ##System Clock signal (200 MHz)
-set_property -dict { PACKAGE_PIN G18   IOSTANDARD LVDS     } [get_ports { FPGA_SYSCLK_N }]; #IO_L13N_T2_MRCC_38 Sch=fpga_sysclk_n
-set_property -dict { PACKAGE_PIN H19   IOSTANDARD LVDS     } [get_ports { FPGA_SYSCLK_P }]; #IO_L13P_T2_MRCC_38 Sch=fpga_sysclk_p
-create_clock -add -name sys_clk_pin -period 5.00 -waveform {0 2.5} [get_ports {FPGA_SYSCLK_P}]; 
+# set_property -dict { PACKAGE_PIN G18   IOSTANDARD LVDS     } [get_ports { FPGA_SYSCLK_N }]; #IO_L13N_T2_MRCC_38 Sch=fpga_sysclk_n
+# set_property -dict { PACKAGE_PIN H19   IOSTANDARD LVDS     } [get_ports { FPGA_SYSCLK_P }]; #IO_L13P_T2_MRCC_38 Sch=fpga_sysclk_p
+# create_clock -add -name sys_clk_pin -period 5.00 -waveform {0 2.5} [get_ports {FPGA_SYSCLK_P}]; 
 
 ##QDRII_CLK (200 MHz)
 ## Note: This clock is used by the MIG for the QDRII+ A and B modules. It should not be used for other purposes in designs that use the QDRII+ A and/or B modules
@@ -61,11 +61,11 @@ create_clock -add -name sys_clk_pin -period 5.00 -waveform {0 2.5} [get_ports {F
 
 ##BTN
 #set_property -dict { PACKAGE_PIN AR13  IOSTANDARD LVCMOS15 } [get_ports { BTN[0] }]; #IO_L12N_T1_MRCC_31 Sch=btn[0]
-#set_property -dict { PACKAGE_PIN BB12  IOSTANDARD LVCMOS15 } [get_ports { BTN[1] }]; #IO_L24N_T3_31 Sch=btn[1]
+set_property -dict { PACKAGE_PIN BB12  IOSTANDARD LVCMOS15 } [get_ports { reset }]; #IO_L24N_T3_31 Sch=btn[1]
 
 ##LED
 set_property -dict { PACKAGE_PIN AR22  IOSTANDARD LVCMOS15 } [get_ports { init_calib_complete }]; #IO_L11N_T1_SRCC_33 Sch=led[0]
-#set_property -dict { PACKAGE_PIN AR23  IOSTANDARD LVCMOS15 } [get_ports { LED[1] }]; #IO_L11P_T1_SRCC_33 Sch=led[1]
+set_property -dict { PACKAGE_PIN AR23  IOSTANDARD LVCMOS15 } [get_ports { test_pass }]; #IO_L11P_T1_SRCC_33 Sch=led[1]
 
 ##IIC Mux
 #set_property -dict { PACKAGE_PIN AK24  IOSTANDARD LVCMOS18 } [get_ports { I2C_FPGA_SCL }]; #IO_L22P_T3_12 Sch=i2c_fpga_scl
